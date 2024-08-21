@@ -1,0 +1,20 @@
+.field {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #009605;
+    cursor: pointer;
+}
+
+.field-cell {
+    border: 1px solid #000;
+    height: 125px;
+}
+
+body {
+    background-color: #2a14cc;
+}
