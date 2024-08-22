@@ -1,6 +1,17 @@
 import image from "../img/goblin.png";
 
 document.addEventListener("DOMContentLoaded", () => {
+  // создаём игровое поле 4x4
+  const field = document.createElement("div");
+  field.classList.add("field");
+
+  for (let i = 0; i < 16; i++) {
+    const fieldCell = document.createElement("div");
+    fieldCell.classList.add("field-cell");
+    field.append(fieldCell);
+  }
+  document.body.append(field);
+
   // создаём персонаж goblin
   const goblin = document.createElement("img");
   goblin.src = image;
